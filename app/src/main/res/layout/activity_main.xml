@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/logo_behind"
+        android:layout_marginTop="8dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:lottie_rawRes="@raw/editor_ppggcxl"
+        android:layout_alignParentEnd="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/View_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SnapEdit"
+        android:textSize="30sp"
+        android:textColor="#4E4E4E"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="18dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/circle_top_right" />
+
+
+
+    <Button
+        android:id="@+id/EditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient_red"
+        android:drawableStart="@drawable/ic_baseline_upgrade_24"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="  Edit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditButton"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/blur_effect"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
